@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace SingleFileApi
+namespace FileServer
 {
     public class Program
     {
@@ -15,7 +15,6 @@ namespace SingleFileApi
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseUrls("http://localhost:7022");
                 });
     }
 }
